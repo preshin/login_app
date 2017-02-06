@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+</head>
+<body>
+<div class="container">
+	<div class="imgcontainer">
+    <img src="img/img_avatar2.png" alt="Avatar" id="myimage" class="avatar" >
+  </div>
+	<label><b> Name : </b></label> <input type="text" id="name">	<br>
+	<label><b>Email</b></label><input type="email" id="email"><br>
+	<label><b>Age : </b></label><input type="text" id="age"><br>
+	<label><b>Sex : </b></label><input type="text" id="sex"><br>
+	<label><b>Address : </b></label><textarea id="address"></textarea>
+	<label><b>Password : </b></label><input type="text" id="psw"><br>
+	<div id="map"></div>
+	<br>
+	<button id="dis">Display</button>
+</div>
+<br>
+
+	<button id="del">Delete User</button>
+	<div id="deldiv" style="display:none">
+		<label><b>Confirm Password : </b></label><input type="password" id="cpsw" required><br>
+		<button id="cbtn">Conform</button>
+	</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDd2jlqQz0_VPrTu7Vx158m0H0Kqaums&callback=initMap">
+    </script>
+</body>
+</html>

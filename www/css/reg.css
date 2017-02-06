@@ -1,0 +1,54 @@
+
+body{
+    background-color: #68ABEE;
+}
+#map {
+        height: 320px;
+        width: 100%;
+       }
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+input[type=text],input[type=email],input[type=password],input[type=number], textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.container {
+    padding: 16px;
+}
+img.avatar {
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .reg{
+       width: 100%;
+    }
+}

@@ -1,0 +1,50 @@
+
+input,textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+#map {
+        height: 320px;
+        width: 100%;
+       }
+#dis {
+    background-color: #D9EB26;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#del {
+    background-color: #DA820B;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+#cbtn {
+    background-color: #DA0B1E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+img.avatar {
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}

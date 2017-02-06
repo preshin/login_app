@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/reg.css">
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-
+	<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>-->
+</head>
+<body>
+<h2>Registration Form</h2>
+
+<form >
+
+  <div class="container">    
+    <div class="imgcontainer">
+    <img src="img/img_avatar2.png" alt="Avatar" id="myImage" class="avatar" required >
+  </div>  
+    <button id = "cameraGetPicture">Upload Pic</button>
+    <label><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+    <br>
+    <label><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+    <br>
+    <label><b>Age</b></label>
+    <input type="text" placeholder="Enter Age" name="age" id="age" required>
+    <br>  
+    <label><b>Sex</b></label>
+    <input type="radio" name="gender" id="male" value="male" checked> Male
+  	<input type="radio" name="gender" id="female" value="female"> Female<br>
+    <br>   
+    <label><b>Address</b></label>
+    <textarea id="address"></textarea>
+    <br>
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <br>
+        <!--<button id="location" required>Get Location</button>-->
+    <button type="button" id="submit">Submit</button>    
+   <!--<button type="button" id="create">create</button>
+    <button type="button" id="insert">insert</button>
+    <button type="button" id="show">show</button>
+  -->
+  <div id="map"></div>
+
+</div>
+</form>
+
+       <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/reg.js"></script>
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrDd2jlqQz0_VPrTu7Vx158m0H0Kqaums&callback=initMap">
+    </script>
+     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</body>
+</html>
